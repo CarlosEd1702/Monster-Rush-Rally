@@ -1,0 +1,63 @@
+# === UNREAL ENGINE ===
+# Folders to ignore
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vscode/
+.idea/
+.vs/
+
+# Project-specific temporary files
+*.sdf
+*.suo
+*.opensdf
+*.VC.db
+*.VC.opendb
+*.log
+*.tmp
+
+# Compiled source files
+*.dll
+*.exe
+*.pdb
+*.lib
+*.app
+*.dylib
+*.ipa
+*.target
+*.buildid
+
+# Ignore these file types used for compilation
+*.obj
+*.o
+*.pch
+*.gch
+
+# Ignore Unreal Launcher & crash files
+*.uoasave
+*.uasset.bak
+*.umap.bak
+*.crash
+*.dmp
+
+# Ignore config overrides
+*.local
+
+# Build and SDK metadata
+Build/
+DerivedDataCache/
+Engine/Programs/UnrealBuildTool/BuildConfiguration.xml
+
+# Mac/Linux-specific
+.DS_Store
+*.swp
+
+# Optional - Ignore project-level launcher backup logs
+*.bak
+
+# Node/npm cache (if used for tools)
+node_modules/
+
+# Unity crash logs if using Unity plugins
+memoryreports/
