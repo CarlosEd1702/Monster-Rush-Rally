@@ -43,6 +43,7 @@ protected:
 	TSubclassOf<UMonsterRushRallyUI> VehicleUIClass;
 
 	/** Pointer to the UI widget */
+	UPROPERTY(BlueprintReadWrite, Category = "UI")
 	TObjectPtr<UMonsterRushRallyUI> VehicleUI;
 
 	

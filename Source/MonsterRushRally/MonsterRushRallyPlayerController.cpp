@@ -10,13 +10,6 @@
 void AMonsterRushRallyPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
-	
-	// spawn the UI widget and add it to the viewport
-	VehicleUI = CreateWidget<UMonsterRushRallyUI>(this, VehicleUIClass);
-
-	check(VehicleUI);
-
-	VehicleUI->AddToViewport();
 }
 
 void AMonsterRushRallyPlayerController::SetupInputComponent()
