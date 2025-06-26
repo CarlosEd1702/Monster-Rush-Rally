@@ -6,10 +6,20 @@
 #include "MonsterRushRallyUI.h"
 #include "EnhancedInputSubsystems.h"
 #include "ChaosWheeledVehicleMovementComponent.h"
+#include "RaceComponent.h"
+#include "GameFramework/GameModeBase.h"
 
 void AMonsterRushRallyPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
+
+	if (AGameModeBase* GM = GetWorld()->GetAuthGameMode())
+	{
+		if (IGameplayModeInterface* Mode = Cast<IGameplayModeInterface>(GM))
+		{
+			Mode->InitPlayerComponent(this); // Llama a la lógica del GameMode correcto
+		}
+	}
 }
 
 void AMonsterRushRallyPlayerController::SetupInputComponent()

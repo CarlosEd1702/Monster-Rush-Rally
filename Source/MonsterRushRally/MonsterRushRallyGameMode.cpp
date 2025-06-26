@@ -7,3 +7,4 @@ AMonsterRushRallyGameMode::AMonsterRushRallyGameMode()
 {
 	PlayerControllerClass = AMonsterRushRallyPlayerController::StaticClass();
 }
+
